@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SITE META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Velvet Affairs | About Us</title>
+    
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+
+    <!-- BOOTSTRAP STYLING -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- CASCADING STYLESHEET -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- INTERNAL STYLES -->
+    <style>
+      p {
+        line-height: 2;
+        font-weight: 300;
+        color: #555;
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+
+      .page-header {
+        background-image: url("assets/covers/Promotional_Banner_Maind.png");
+        background-size: cover;
+        background-position: center center;
+        padding: 120px 0 100px;
+        text-align: center;
+        margin-bottom: 0;
+        color: #ffffff;
+      }
+
+      .page-title {
+        font-size: 46px;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      .page-subtitle {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #fff;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .content-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .content-text-block {
+        padding: 20px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .section-heading {
+        font-size: 28px;
+        margin-bottom: 35px;
+        position: relative;
+        padding-bottom: 20px;
+        display: inline-block;
+        color: #000;
+      }
+
+      .section-heading:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 1px;
+        background: var(--accent-color, #800020);
+      }
+
+      .quote-block {
+        /* font-family: "Playfair Display", serif; */
+        font-size: 0.8rem;
+        /* font-style: italic; */
+        text-align: center;
+        padding: 6rem 7rem;
+        /* background: #c6c6cd; */
+        background-image: url(assets/Covers/Promotional_Banner_Maind.png);
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        margin: 0;
+        color: #fff;
+        line-height: 2;
+      }
+
+      strong {
+        font-weight: 500;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <!-- <div class="top-bar">
+      Celebrating India's Soulful Journeys &nbsp; | &nbsp; Creating Timeless
+      Memories
+    </div> -->
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container position-relative">
+        <!-- Mobile Menu Checkbox Hack (No JS) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label d-lg-none">☰</label>
+
+        <!-- Mobile Nav Drawer -->
+        <nav class="mobile-nav d-lg-none">
+          <a href="#event" class="nav-link">Events</a>
+          <a href="#gallery.html" class="nav-link" target="_blank">Gallery</a>
+          <a href="#spotlight" class="nav-link">Stories</a>
+          <a href="discover.html" class="nav-link" target="_blank">Discover</a>
+          <a
+            target="_blank"
+            href="#journal.html"
+            class="nav-link"
+            style="color: var(--accent-color)"
+            >Journal</a
+          >
+          <a href="social.html" class="nav-link" target="_blank">Socials</a>
+          <a href="contact.html" class="nav-link" target="_blank">Contact</a>
+        </nav>
+
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo">The Velvet Affairs</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-container d-none d-lg-flex">
+          <a href="#event" class="nav-link">Events</a>
+          <a href="#gallery.html" class="nav-link" target="_blank">Gallery</a>
+          <a href="#spotlight" class="nav-link">Stories</a>
+          <a href="discover.html" class="nav-link" target="_blank">Discover</a>
+          <a
+            target="_blank"
+            href="#journal.html"
+            class="nav-link"
+            style="color: var(--accent-color)"
+            >Journal</a
+          >
+          <a href="social.html" class="nav-link" target="_blank">Socials</a>
+          <a href="contact.html" class="nav-link" target="_blank">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title" style="text-transform: uppercase">
+          House Of The Velvet Affairs
+        </h1>
+        <p class="page-subtitle">
+          A journey into the heart of celebration, craftsmanship, and community.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 1: ABOUT US -->
+    <section class="content-section">
+      <div class="container">
+        <div class="content-text-block">
+          <h2 class="section-heading">About Us</h2>
+          <p>
+            In a world that rushes, we choose to pause. The Velvet Affairs is an
+            ode to the art of slow celebration. Founded by Muskaan Jain and
+            Yashika Goyal, our philosophy is rooted in a simple truth:<br />
+            <strong>Grandeur is meaningless without Soul.</strong>
+          </p>
+          <p>
+            We are the storytellers of your joy. Muskaan brings the visual
+            poetry—the aesthetics of palaces and the elegance of royalty.
+            Yashika brings the emotional anchor—the sanctity of rituals and the
+            warmth of hospitality. Together, we weave a tapestry where tradition
+            meets modern finesse.
+          </p>
+          <p>
+            Whether it is the first giggle of your child or the silent prayer of
+            a Havan, we believe every moment has a texture. We ensure that
+            texture is as soft, as rich, and as timeless as velvet. We invite
+            you to leave the logistics to us, so you can be free to live the
+            moment, breathe in the joy, and be truly present with the ones you
+            love.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE SEPARATOR -->
+    <div class="quote-block container-fluid">
+      <h2 class="page-subtitle">The Velvet Vow</h2>
+      <br />
+      To us, you are not a client; you are family. We vow to treat your
+      celebration with the same sanctity and care as we would our own. We
+      promise that when you entrust us with your memories, we will handle them
+      with 'Velvet Hands'—soft, careful, and luxurious. We vow to be invisible
+      in our execution so that your joy remains the only visible spectacle. From
+      the first marigold strung to the last lamp lit, our commitment is to honor
+      your traditions, respect your emotions, and curate an experience that
+      lingers in your heart long after the guests have gone. This is our
+      promise. This is The Velvet Affairs.
+    </div>
+
+    <!-- SECTION 2: OUR PHILOSOPHY -->
+    <section class="content-section">
+      <div class="container">
+        <div class="content-text-block">
+          <h2 class="section-heading">Our Philosophy</h2>
+          <p>
+            We believe that a celebration is a living, breathing entity. It has
+            a heartbeat. At The Velvet Affairs, our philosophy is simple: we
+            place meaning above spectacle.
+          </p>
+          <p>
+            We vow to treat your memories with 'Velvet Hands'—gentle, reverent,
+            and luxurious. When you entrust us with your occasion, you are not
+            hiring a manager; you are adopting a family that worries about the
+            flowers, the food, and the feelings so you don't have to.
+          </p>
+          <p>
+            We promise to be invisible in our execution but unmistakable in our
+            impact. We vow to honor the ancient rhythms of India—the timing of
+            the Aarti, the color of the Haldi, the sound of the Dhol—ensuring
+            that your celebration echoes not just in photos, but in the hearts
+            of those who witnessed it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Column 1 -->
+          <div class="col-md-3 col-12">
+            <h5>Let's Connect</h5>
+            <ul>
+              <li><a href="#contact.html" target="_blank">Contact Us</a></li>
+              <li>
+                <a href="#booking.html" target="_blank">Book A Consultation</a>
+              </li>
+              <li>
+                <a href="mailto:info@thevelvetaffairs.com" target="_blank"
+                  >Email Us</a
+                >
+              </li>
+              <li><a href="#faq.html" target="_blank">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-3 col-12">
+            <h5>Our Roots</h5>
+            <ul>
+              <li><a href="discover.html" target="_blank">Our Story</a></li>
+              <li><a href="journal.html" target="_blank">Journals</a></li>
+              <li><a href="partners.html" target="_blank">Our Partners</a></li>
+              <li><a href="press.html" target="_blank">Press & Media</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-3 col-12">
+            <h5>Occasions</h5>
+            <ul>
+              <li><a href="birthday.html" target="_blank">Birthdays</a></li>
+              <li><a href="festivals.html" target="_blank">Festivals</a></li>
+              <li><a href="weddings.html" target="_blank">Wedding Galas</a></li>
+              <li><a href="bhakti.html" target="_blank">Bhakti</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4 (Join Family + Socials) -->
+          <div class="col-md-3 col-12">
+            <h5>Join Our Family</h5>
+            <p
+              style="
+                color: #a8a8a8;
+                margin-bottom: 20px;
+                line-height: 1.6;
+                font-size: 12px;
+              "
+            >
+              We are more than a brand; we are a community. Follow our journey
+              for daily inspiration, exclusive updates, and a glimpse into the
+              magic we create.
+            </p>
+
+            <div class="footer-social-links">
+              <!-- Instagram -->
+              <a
+                target="_blank"
+                href="https://www.instagram.com/thevelvetaffairsofficial/"
+                aria-label="Instagram"
+                style="margin-right: 15px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a
+                target="_blank"
+                href="https://www.facebook.com/thevelvetaffairsofficial"
+                aria-label="Facebook"
+                style="margin-right: 15px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </a>
+              <!-- LinkedIn -->
+              <a
+                target="_blank"
+                href="www.linkedin.com/in/thevelvetaffairsofficial"
+                aria-label="LinkedIn"
+                style="margin-right: 15px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+              <!-- Email -->
+              <a
+                target="_blank"
+                href="mailto:info@thevelvetaffairs.com"
+                aria-label="Email"
+                style="margin-right: 15px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                  />
+                </svg>
+              </a>
+              <!-- Phone -->
+              <a
+                href="tel:+919999728984"
+                aria-label="Phone"
+                style="margin-right: 15px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2025 The Velvet Affairs. All Rights Reserved. <br />
+          <span style="display: inline-block; margin-top: 10px; color: #a3a3a3"
+            >Privacy Policy | Terms of Use | Cookie Policy</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
